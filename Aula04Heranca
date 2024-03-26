@@ -1,0 +1,29 @@
+class Aluno: 
+    def __init__(self, codigo, nome, matricula):
+        self.codigo = codigo 
+        self.nome = nome 
+        self.matricula = matricula 
+    
+    def imprimir(self):
+        print("codigo:", self.codigo)
+        print("nome:", self.nome)
+        print("Matricula", self.matricula)
+
+class AluEnsinoMedio(Aluno): 
+    def __init__(self,ano,codigo,nome,matricula ):
+        Aluno.__init__(self,codigo,nome, matricula)
+        self.ano = ano
+    
+
+
+    
+
+class AlunoGraducao(Aluno):
+    def __init__(self,semestre,codigo,nome,matricula):
+     Aluno.__init__(self,codigo,nome, matricula)
+     self.semestre = semestre 
+
+
+
+
+aluno = AlunoGraducao()
